@@ -52,8 +52,7 @@ class Student
 
   # Create and return new student from database row
   def self.new_from_db(row)
-    new_student = self.new(row[1], row[2], row[0])
-    new_student 
+    self.new(row[1], row[2], row[0])
   end
 
   # Find student in database and create new Student object from matching row
